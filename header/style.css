@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root{
+    --text-font:'Roboto', sans-serif;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+/* header */
+.header{
+    position: relative;
+
+    width: 1440px;
+    height: 800px;
+
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    margin-top: 60px;
+    /* background-color: blue; */
+}
+body{
+    background-color: black;
+}
+
+/* menu */
+.menu{
+    position: absolute;
+    z-index: 3;
+
+
+    height: 72px;
+    width: 100%;
+    /* 0.5 is opacity */
+    background: rgba(16, 17, 17, 0.2);
+
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid;
+    border-color: white; 
+}
+
+/* logo */
+.header .menu img{
+    margin-left: 116px;
+    width: 116px;
+    height: 26px;
+}
+
+/* navigation */
+.header nav{
+    margin-right: 116px;
+    /* background-color: red; */
+}
+.header nav a{
+    font-family: var(--text-font);
+    text-decoration: none ;
+    color: white;
+    font-size: 16px;
+    margin-right: 37.5px;
+}
+
+
+.header nav a:last-child{
+    margin-right:0;
+}
+/* banner text */
+
+.banner-text{
+    position: absolute;
+    z-index: 3;
+    
+
+    margin-top:240px;
+    /* background-color: red; */
+}
+
+.banner-text h1{    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+    font-family: var(--text-font);
+    /* background-color: blue; */
+    width: 540px;
+    color: white;
+
+    margin: auto;
+}
+.banner-text p{
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+
+    width: 640px;
+    height: 42px;
+   color: #FFFFFF;;
+    margin-top: 42px;
+    -webkit-text-stroke: 0.5px #000000;
+}
+
+.banner-text button{
+    font-family: var(--text-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    padding: 5px 26px;
+    background: #FFFFFF;
+
+    box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+    border-radius: 50px;
+}
+.banner-text div{
+    width: 315px;
+    margin-top: 42px !important;
+    /* background: red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-text a{
+    font-family: var(--text-font);
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
