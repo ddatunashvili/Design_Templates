@@ -1,0 +1,123 @@
+
+@import url("//cdn.web-fonts.ge/fonts/bpg-boxo-boxo/css/bpg-boxo-boxo.min.css");
+
+
+*{
+    font-family: "BPG Boxo-Boxo", sans-serif;
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+}
+
+body{
+    background: url(ანიმე.jpg);
+    height: 2000px;
+}
+/* გარე დივი */
+.anime-extention{
+    position: fixed;
+}
+/* ბანერი */
+.anime-extention .banner{
+    position: absolute !important;
+    z-index: 999999 ;
+    width: 260px ;
+    top: 200px ;
+    left: 10px ;
+    height: 570px ;
+    background: #ee4a946d;
+    border-radius: 16px ;
+    box-shadow: 0 4px 30px #ee4a94 ;
+    backdrop-filter: blur(2.3px) !important;
+    border: 1px solid rgba(255, 35, 248, 0.687) ;
+    
+}
+/* სათაური */
+.anime-extention h1{
+    width: 100% ;
+    margin-top: 20px ;
+    margin-bottom:  20px ;
+    font-size: 30px ;
+    color: black ;
+    font-weight: 400 ;
+    text-align: center ;
+    filter: brightness(0.9) ;
+}
+
+/* ფოტოები */
+.anime-extention img{
+    filter: grayscale(100%) ;
+    width: 128px ;
+    margin-top:20px !important;
+    height: 128px ;
+    transition: 0.4s ;
+    object-fit: cover ;
+    display: block ;
+    margin: auto;
+    margin-top: 5px ;
+    margin-bottom: 5px ;
+    border-radius: 50% ;
+}
+/* ფოტოზე მაუსის მიტანისას */
+.anime-extention img:hover{
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    scale: 1.2;
+    filter: grayscale(0%) ;
+    cursor: pointer ;
+    
+}
+/* პოპაპი */
+.anime-extention .popup{
+    height: 100px ;
+    width: 300px ;
+    filter: brightness(0.9) contrast(1.9) ;  
+    color: rgb(21, 5, 201) ;
+    text-align: center ;
+    display: none ;
+    position: absolute ;
+    z-index: 100 ;
+    font-size: 35px ;
+    font-weight: bold ;
+    padding: 10px ;
+    margin-top: 20px ;
+    margin-left: 240px ;
+    border-radius: 20px ;
+    background: #ee87b5b8;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 35, 248, 0.778) ;
+
+}
+/* ბანერი აქტიური */
+.anime-extention div.active{
+    display: block ;
+}
+/* პოპაპი აქტიური */
+.anime-extention .popup.active{
+    
+    display: flex;
+}
+
+.anime-extention .popup p{
+    font-weight: 300 ;
+    font-size: 20px ;
+    margin: 10px ;
+    width: 100% ;
+    letter-spacing: 1px;
+    height: 100% ;
+}
+
+/* ტივტივის ანიმაცია */
+.floating { 
+    animation-name: floating ;
+    animation-duration: 2.4s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px) ; }
+    50%  { transform: translate(0, 20px) ; }
+    100%   { transform: translate(0, -0px) ; }   
+}
+
